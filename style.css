@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  /* padding-right: 30px; */
+  line-height: 25px;
+}
+.main {
+  display: flex;
+  width: 924px;
+  border-radius: 7px;
+}
+div {
+  padding: 45px 50px;
+}
+div h1 {
+  margin: 20px auto;
+  color: hsl(0, 0%, 100%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+div button {
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 2px solid white;
+  margin-top: 80px;
+  cursor: pointer;
+  font-size: 15.5px;
+}
+.one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0 0 7px;
+}
+.one button {
+  color: hsl(31, 77%, 52%);
+}
+.two {
+  background-color: hsl(184, 100%, 22%);
+}
+.two button {
+  color: hsl(184, 100%, 22%);
+}
+.theerd {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 7px 7px 0;
+}
+.theerd button {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+@media only screen and (max-width: 650px) {
+  .main {
+    display: block;
+    margin: 3rem 1.5rem;
+  }
+  .one {
+    border-radius: 7px 7px 0 0;
+  }
+  .theerd {
+    border-radius: 0 0 7px 7px;
+  }
+  div button {
+    margin-top: 30px;
+  }
+}
